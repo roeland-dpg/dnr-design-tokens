@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "@divriots/style-dictionary-to-figma": "^0.4.0",
+    "style-dictionary": "^3.7.1"
+  },
+  "name": "dnr-design-tokens",
+  "description": "Design Tokens to be used in DNR applications",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "style-dictionary build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roeland-dgp/dnr-design-tokens.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roeland-dgp/dnr-design-tokens/issues"
+  },
+  "homepage": "https://github.com/roeland-dgp/dnr-design-tokens#readme"
+}
