@@ -26,9 +26,6 @@ module.exports =
                         "destination": "variables.css"
                     }
                 ],
-                options: {
-                    outputReferences: true
-                }
             }
         },
     }
