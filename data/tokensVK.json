@@ -1,0 +1,38 @@
+{
+  "color": {
+    "light": {
+      "blue": {
+        "200": {
+          "value": "#0097D8",
+          "type": "color"
+        },
+        "300": {
+          "value": "#008BC3",
+          "type": "color"
+        },
+        "000": {
+          "value": "#F7FAFC",
+          "type": "color"
+        }
+      },
+      "neutral": {
+        "000": {
+          "value": "#FFF",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "button": {
+    "color": {
+      "background": {
+        "value": "#0097D8",
+        "type": "color"
+      },
+      "text": {
+        "value": "#FFF",
+        "type": "color"
+      }
+    }
+  }
+}

@@ -1,14 +1,19 @@
 {
+  "name": "@dnr-ui/tokens",
   "devDependencies": {
     "@divriots/style-dictionary-to-figma": "^0.4.0",
-    "style-dictionary": "^3.7.1"
+    "style-dictionary": "^3.7.1",
+    "token-transformer": "^0.0.27"
   },
-  "name": "dnr-design-tokens",
   "description": "Design Tokens to be used in DNR applications",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "style-dictionary build",
+    "transform": "npx token-transformer figma/tokens.json data/tokens.json global",
+    "transform:vk": "npx token-transformer figma/tokens.json data/tokensVK.json global,VK",
+    "transform:hp": "npx token-transformer figma/tokens.json data/tokensHP.json global,HP",
+    "build:style-dictionary": "style-dictionary build",
+    "build": "npm run transform && npm run build:style-dictionary",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

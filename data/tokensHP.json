@@ -1,0 +1,34 @@
+{
+  "color": {
+    "light": {
+      "red": {
+        "100": {
+          "value": "#D72236",
+          "type": "color"
+        },
+        "200": {
+          "value": "#921D2E",
+          "type": "color"
+        }
+      },
+      "neutral": {
+        "000": {
+          "value": "#FFF",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "button": {
+    "color": {
+      "background": {
+        "value": "#D72236",
+        "type": "color"
+      },
+      "text": {
+        "value": "#FFF",
+        "type": "color"
+      }
+    }
+  }
+}
