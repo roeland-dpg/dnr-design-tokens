@@ -1,26 +1,28 @@
-#  Template NodeJS build
+image:
+  # from https://bitbucket.org/persgroep/selectives-bitbucket-pipeline-image
+  name: 202994661477.dkr.ecr.eu-west-1.amazonaws.com/sel-bitbucket-pipeline-image-repo:latest
 
-#  This template allows you to validate your NodeJS code.
-#  The workflow allows running tests and code linting on the default branch.
-
-image: node:16
+  aws:
+    access-key: $AWS_ACCESS_KEY_ID
+    secret-key: $AWS_SECRET_ACCESS_KEY
 
 pipelines:
   default:
-    - parallel:
-      - step:
-          name: Install
-          script:
-            - npm ci
-      - step:
-          name: Transform Figma Tokens
-          caches:
-            - node
-          script:
-            - npm run transform
-      - step:
-          name: Build Style Dictionary
-          script:
-            - npm run build:style-dictionary
-          caches:
-            - node
+    - step:
+        name: Install
+        script:
+          - npm-setup-artifactory.sh $ARTIFACTORY_USER $ARTIFACTORY_PASSWORD
+          - npm ci
+    - step:
+        name: Transform Figma Tokens
+        caches:
+          - node
+        script:
+          - npm run transform
+    - step:
+        name: Build Style Dictionary
+        script:
+          - npm-setup-artifactory.sh $ARTIFACTORY_USER $ARTIFACTORY_PASSWORD
+          - npm run build:style-dictionary
+        caches:
+          - node
