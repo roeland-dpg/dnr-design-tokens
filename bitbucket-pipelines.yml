@@ -9,6 +9,10 @@ pipelines:
   default:
     - parallel:
         - step:
+            name: Install
+            script:
+              - npm ci
+        - step:
             name: Transform Figma Tokens
             caches:
               - node
