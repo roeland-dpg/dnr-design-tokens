@@ -1,0 +1,26 @@
+#  Template NodeJS build
+
+#  This template allows you to validate your NodeJS code.
+#  The workflow allows running tests and code linting on the default branch.
+
+image: node:16
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: Install
+          script:
+            - npm ci
+      - step:
+          name: Transform Figma Tokens
+          caches:
+            - node
+          script:
+            - npm run transform
+      - step:
+          name: Build Style Dictionary
+          script:
+            - npm run build:style-dictionary
+          caches:
+            - node
