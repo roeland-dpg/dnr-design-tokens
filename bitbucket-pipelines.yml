@@ -9,20 +9,8 @@ image:
 pipelines:
   default:
     - step:
-        name: Install
+        name: Transform and Build
         script:
           - npm-setup-artifactory.sh $ARTIFACTORY_USER $ARTIFACTORY_PASSWORD
           - npm ci
-    - step:
-        name: Transform Figma Tokens
-        caches:
-          - node
-        script:
-          - npm run transform
-    - step:
-        name: Build Style Dictionary
-        script:
-          - npm-setup-artifactory.sh $ARTIFACTORY_USER $ARTIFACTORY_PASSWORD
-          - npm run build:style-dictionary
-        caches:
-          - node
+          - npm run build
