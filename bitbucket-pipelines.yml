@@ -6,8 +6,27 @@ image:
     access-key: $AWS_ACCESS_KEY_ID
     secret-key: $AWS_SECRET_ACCESS_KEY
 
+definitions:
+  services:
+    docker:
+      memory: 1024
+
+  steps:
+    - step: &Push-to-GitHub
+        name: Push code changes to GitHub
+        services:
+          - docker
+        caches:
+          - docker
+        script:
+          - git remote add github "git@github.com:roeland-dpg/dnr-design-tokens.git"
+          - git checkout $BITBUCKET_BRANCH
+          - git pull
+          - git push github $BITBUCKET_BRANCH
+
 pipelines:
   default:
+    - step: *Push-to-GitHub
     - step:
         name: Transform and Build
         script:
