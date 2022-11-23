@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "transform": "npx token-transformer figma/tokens.json data/tokens.json",
+    "transform": "npx token-transformer figma/tokens.json data/tokens.json --expandTypography=true",
     "build:style-dictionary": "style-dictionary build",
     "build": "npm run transform && npm run build:style-dictionary",
     "test": "echo \"Error: no test specified\" && exit 1"
