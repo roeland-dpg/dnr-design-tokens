@@ -9,11 +9,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "transform": "npx token-transformer figma/tokens.json data/tokens.json global",
-    "transform:vk": "npx token-transformer figma/tokens.json data/tokensVK.json global,VK",
-    "transform:hp": "npx token-transformer figma/tokens.json data/tokensHP.json global,HP",
+    "transform:global": "npx token-transformer figma/tokens.json data/global.json global",
+    "transform:themes": "npx token-transformer figma/tokens.json --theme --themeOutputPath data",
     "build:style-dictionary": "style-dictionary build",
-    "build": "npm run transform && npm run build:style-dictionary",
+    "build": "npm run transform:global && npm run transform:themes && npm run build:style-dictionary",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

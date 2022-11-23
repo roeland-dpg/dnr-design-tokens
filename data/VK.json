@@ -1,19 +1,17 @@
 {
   "color": {
     "light": {
-      "red": {
-        "100": {
-          "value": "#D72236",
+      "blue": {
+        "200": {
+          "value": "#0097D8",
           "type": "color"
         },
-        "200": {
-          "value": "#921D2E",
+        "300": {
+          "value": "#008BC3",
           "type": "color"
-        }
-      },
-      "neutral": {
+        },
         "000": {
-          "value": "#FFF",
+          "value": "#F7FAFC",
           "type": "color"
         }
       }
@@ -22,12 +20,12 @@
   "button": {
     "color": {
       "background": {
-        "value": "#D72236",
+        "value": "#0097D8",
         "type": "color"
       },
       "text": {
         "value": "#FFF",
-        "type": "color"
+        "type": "other"
       }
     }
   }

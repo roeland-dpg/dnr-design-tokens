@@ -33,7 +33,7 @@ module.exports =
             // },
             "css": {
                 prefix: 'sel',
-                "transformGroup": "css",
+                transformGroup: "css",
                 buildPath: "build/css/",
                 files: files.map((filePath) => {
                     return {
