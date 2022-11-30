@@ -1,0 +1,24 @@
+{
+  "color": {
+    "red": {
+      "100": {
+        "value": "#D72236",
+        "type": "color"
+      },
+      "200": {
+        "value": "#921D2E",
+        "type": "color"
+      }
+    }
+  },
+  "button": {
+    "color": {
+      "value": "#FFF",
+      "type": "color"
+    },
+    "background": {
+      "value": "#D72236",
+      "type": "color"
+    }
+  }
+}

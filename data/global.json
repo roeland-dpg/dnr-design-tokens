@@ -1,11 +1,9 @@
 {
   "color": {
-    "light": {
-      "neutral": {
-        "000": {
-          "value": "#FFF",
-          "type": "color"
-        }
+    "neutral": {
+      "000": {
+        "value": "#FFF",
+        "type": "color"
       }
     }
   }

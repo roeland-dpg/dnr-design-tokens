@@ -1,0 +1,28 @@
+{
+  "color": {
+    "blue": {
+      "200": {
+        "value": "#0097D8",
+        "type": "color"
+      },
+      "300": {
+        "value": "#008BC3",
+        "type": "color"
+      },
+      "000": {
+        "value": "#F7FAFC",
+        "type": "color"
+      }
+    }
+  },
+  "button": {
+    "color": {
+      "value": "#FFF",
+      "type": "color"
+    },
+    "background": {
+      "value": "#008BC3",
+      "type": "color"
+    }
+  }
+}
