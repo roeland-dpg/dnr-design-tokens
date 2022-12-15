@@ -53,7 +53,6 @@ module.exports =
                 buildPath: "build/css/",
                 files: [...categories.map(category => ({
                     filter: (token) => {
-                        console.log(token)
                         return token.attributes.category === category
                     },
                     format: "css/variables",
