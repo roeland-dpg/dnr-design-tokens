@@ -62,7 +62,7 @@ module.exports =
                         return token.attributes.category === component
                     },
                     format: "css/variables",
-                    destination: `${component}.css`
+                    destination: `components/${component}.css`
                 }))]
             }
         },
