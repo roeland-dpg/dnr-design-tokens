@@ -1,26 +1,10 @@
 {
   "button": {
-    "border-width": {
-      "cta": {
-        "focus": {
-          "value": "2px",
-          "type": "borderWidth"
-        }
-      }
-    },
     "button-radius": {
       "value": "4px",
       "type": "borderRadius"
     },
     "color": {
-      "border": {
-        "cta": {
-          "focus": {
-            "value": "#99c1ff",
-            "type": "color"
-          }
-        }
-      },
       "background": {
         "cta": {
           "default": {
@@ -32,7 +16,7 @@
             "type": "color"
           },
           "active": {
-            "value": "#015be6",
+            "value": "#0165ff",
             "type": "color"
           },
           "focus": {
@@ -43,9 +27,85 @@
             "value": "#dbdbdb",
             "type": "color"
           }
+        },
+        "primary": {
+          "default": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#5f5f5f",
+            "type": "color"
+          },
+          "active": {
+            "value": "#313131",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#dbdbdb",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#f5f5f5",
+            "type": "color"
+          },
+          "active": {
+            "value": "#e9e9e9",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#ffffff",
+            "type": "color"
+          }
+        },
+        "tertiary": {
+          "hover": {
+            "value": "#f0f0f0",
+            "type": "color"
+          },
+          "active": {
+            "value": "#dbdbdb",
+            "type": "color"
+          }
+        },
+        "destructive": {
+          "hover": {
+            "value": "#f9e9ea",
+            "type": "color"
+          },
+          "active": {
+            "value": "#c21f31",
+            "type": "color"
+          }
         }
       },
-      "label": {
+      "border": {
+        "focus": {
+          "value": "#99c1ff",
+          "type": "color"
+        },
+        "secondary": {
+          "value": "#dbdbdb",
+          "type": "color"
+        }
+      }
+    },
+    "label": {
+      "color": {
         "cta": {
           "default": {
             "value": "#ffffff",
@@ -63,81 +123,130 @@
             "value": "#ffffff",
             "type": "color"
           },
-          "disable": {
+          "disabled": {
             "value": "#f5f5f5",
             "type": "color"
           }
-        }
-      }
-    },
-    "label": {
-      "typography": {
-        "s": {
-          "fontFamily": {
-            "value": "Helvetica",
-            "type": "fontFamily"
+        },
+        "primary": {
+          "default": {
+            "value": "#ffffff",
+            "type": "color"
           },
-          "fontWeight": {
-            "value": "Bold",
-            "type": "fontWeight"
+          "hover": {
+            "value": "#ffffff",
+            "type": "color"
           },
-          "lineHeight": {
-            "value": "100%",
-            "type": "lineHeight"
+          "active": {
+            "value": "#ffffff",
+            "type": "color"
           },
-          "fontSize": {
-            "value": 12,
-            "type": "fontSize"
+          "focus": {
+            "value": "#ffffff",
+            "type": "color"
           },
-          "letterSpacing": {
-            "value": "0.5%",
-            "type": "letterSpacing"
+          "disabled": {
+            "value": "#f5f5f5",
+            "type": "color"
           }
+        },
+        "secondary": {
+          "default": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "active": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#bbbbbb",
+            "type": "color"
+          }
+        },
+        "tertiary": {
+          "default": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "active": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#bbbbbb",
+            "type": "color"
+          }
+        },
+        "destructive": {
+          "default": {
+            "value": "#c21f31",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#c21f31",
+            "type": "color"
+          },
+          "active": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#c21f31",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#f3d2d6",
+            "type": "color"
+          }
+        }
+      },
+      "letter-spacing": {
+        "s": {
+          "value": "0%",
+          "type": "letterSpacing"
         },
         "m": {
-          "fontFamily": {
-            "value": "Helvetica",
-            "type": "fontFamily"
-          },
-          "fontWeight": {
-            "value": "Bold",
-            "type": "fontWeight"
-          },
-          "lineHeight": {
-            "value": "100%",
-            "type": "lineHeight"
-          },
-          "fontSize": {
-            "value": 14,
-            "type": "fontSize"
-          },
-          "letterSpacing": {
-            "value": "0.25%",
-            "type": "letterSpacing"
-          }
+          "value": "0.25%",
+          "type": "letterSpacing"
         },
         "l": {
-          "fontFamily": {
-            "value": "Helvetica",
-            "type": "fontFamily"
-          },
-          "fontWeight": {
-            "value": "Bold",
-            "type": "fontWeight"
-          },
-          "lineHeight": {
-            "value": "100%",
-            "type": "lineHeight"
-          },
-          "fontSize": {
-            "value": 16,
-            "type": "fontSize"
-          },
-          "letterSpacing": {
-            "value": "0.25%",
-            "type": "letterSpacing"
-          }
+          "value": "0.25%",
+          "type": "letterSpacing"
         }
+      },
+      "line-height": {
+        "value": "100%",
+        "type": "lineHeights"
+      },
+      "font-weight": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "font-family": {
+        "value": "Helvetica",
+        "type": "fontFamilies"
+      },
+      "font-size": {
+        "s": {},
+        "m": {},
+        "l": {}
       }
     },
     "spacing": {
@@ -152,6 +261,20 @@
         },
         "l": {
           "value": 16,
+          "type": "spacing"
+        }
+      },
+      "gap": {
+        "s": {
+          "value": 4,
+          "type": "spacing"
+        },
+        "m": {
+          "value": 4,
+          "type": "spacing"
+        },
+        "l": {
+          "value": 8,
           "type": "spacing"
         }
       }
@@ -170,6 +293,144 @@
           "value": 40,
           "type": "sizing"
         }
+      }
+    },
+    "icon": {
+      "size": {
+        "s": {
+          "value": "16px",
+          "type": "sizing"
+        },
+        "m": {
+          "value": "20px",
+          "type": "sizing"
+        },
+        "l": {
+          "value": "24px",
+          "type": "sizing"
+        }
+      },
+      "color": {
+        "cta": {
+          "default": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "active": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#f5f5f5",
+            "type": "color"
+          }
+        },
+        "primary": {
+          "default": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "active": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#f5f5f5",
+            "type": "color"
+          }
+        },
+        "secondary": {
+          "default": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "active": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#bbbbbb",
+            "type": "color"
+          }
+        },
+        "tertiary": {
+          "default": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "active": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#000000",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#bbbbbb",
+            "type": "color"
+          }
+        },
+        "destructive": {
+          "default": {
+            "value": "#c21f31",
+            "type": "color"
+          },
+          "hover": {
+            "value": "#c21f31",
+            "type": "color"
+          },
+          "active": {
+            "value": "#ffffff",
+            "type": "color"
+          },
+          "focus": {
+            "value": "#c21f31",
+            "type": "color"
+          },
+          "disabled": {
+            "value": "#f3d2d6",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "border-width": {
+      "focus": {
+        "value": "2px",
+        "type": "borderWidth"
+      },
+      "secondary": {
+        "value": "1px",
+        "type": "borderWidth"
       }
     }
   }

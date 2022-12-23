@@ -13,8 +13,9 @@
   ],
   "scripts": {
     "clean": "style-dictionary clean",
-    "transform": "npm run transform:global && npm run transform:components",
-    "transform:global": "npx token-transformer figma/tokens.json data/core.json core --expandTypography=true",
+    "transform": "npm run transform:core && npm run transform:semantic && npm run transform:components",
+    "transform:core": "npx token-transformer figma/tokens.json data/core.json core --expandTypography=true",
+    "transform:semantic": "npx token-transformer figma/tokens.json data/semantic.json core,semantic core --expandTypography=true --resolveReferences=true",
     "transform:components": "npx token-transformer figma/tokens.json data/components.json core,components core --expandTypography=true --resolveReferences=true",
     "build:style-dictionary": "style-dictionary build",
     "build": "npm run transform && npm run build:style-dictionary",

@@ -165,7 +165,7 @@
       "type": "paragraphSpacing"
     },
     "100x": {
-      "value": 12,
+      "value": 8,
       "type": "paragraphSpacing"
     },
     "200x": {
@@ -1259,11 +1259,11 @@
       "type": "spacing"
     },
     "100x": {
-      "value": 12,
+      "value": 8,
       "type": "spacing"
     },
     "150x": {
-      "value": 8,
+      "value": 12,
       "type": "spacing"
     },
     "200x": {

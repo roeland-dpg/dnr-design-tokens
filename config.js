@@ -7,6 +7,9 @@ const categories = Object.keys(core)
 const componentsFile = require('./data/components.json');
 const components = Object.keys(componentsFile)
 
+const semanticFile = require('./data/semantic.json');
+const semantic = Object.keys(semanticFile)
+
 StyleDictionary.registerTransform({
     name: "shadow/css",
     type: "value",
@@ -53,17 +56,23 @@ module.exports =
                 buildPath: "build/css/",
                 files: [...categories.map(category => ({
                     filter: (token) => {
-                        return token.attributes.category === category
+                        return token.attributes.category === category && token.filePath === 'data/core.json'
                     },
                     format: "css/variables",
-                    destination: `${category}.css`
+                    destination: `core/${category}.css`
+                })),...semantic.map(category => ({
+                    filter: (token) => {
+                        return token.attributes.category === category && token.filePath === 'data/semantic.json'
+                    },
+                    format: "css/variables",
+                    destination: `semantic/${category}.css`
                 })), ...components.map(component => ({
                     filter: (token) => {
-                        return token.attributes.category === component
+                        return token.attributes.category === component && token.filePath === 'data/components.json'
                     },
                     format: "css/variables",
                     destination: `components/${component}.css`
-                }))]
+                })),]
             }
         },
 
