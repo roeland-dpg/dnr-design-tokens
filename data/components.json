@@ -244,9 +244,18 @@
         "type": "fontFamilies"
       },
       "font-size": {
-        "s": {},
-        "m": {},
-        "l": {}
+        "s": {
+          "value": 12,
+          "type": "fontSizes"
+        },
+        "m": {
+          "value": 14,
+          "type": "fontSizes"
+        },
+        "l": {
+          "value": 16,
+          "type": "fontSizes"
+        }
       }
     },
     "spacing": {
