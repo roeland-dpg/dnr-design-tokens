@@ -6,11 +6,9 @@
     "style-dictionary": "^3.7.1",
     "token-transformer": "^0.0.27"
   },
+  "private": true,
   "description": "Design Tokens to be used in DNR applications",
   "main": "index.js",
-  "files": [
-    "build"
-  ],
   "scripts": {
     "clean": "style-dictionary clean",
     "transform": "npm run transform:core && npm run transform:semantic && npm run transform:components",
@@ -18,13 +16,15 @@
     "transform:semantic": "npx token-transformer figma/tokens.json data/semantic.json core,semantic core --expandTypography=true --resolveReferences=true",
     "transform:components": "npx token-transformer figma/tokens.json data/components.json core,components core --expandTypography=true --resolveReferences=true",
     "build:style-dictionary": "style-dictionary build",
-    "build": "npm run transform && npm run build:style-dictionary",
+    "copy": "cat ./package.json | grep -v '\"private\":' > build/package.json && cp README.md build",
+    "build": "npm run clean && npm run transform && npm run build:style-dictionary",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run clean && npm run build"
+    "pub": "npm run copy && npm run build && npm publish ./build"
   },
   "publishConfig": {
     "registry": "https://artifactory.persgroep.cloud/artifactory/api/npm/npm-local",
-    "access": "restricted"
+    "access": "restricted",
+    "directory": "build"
   },
   "license": "MIT"
 }
